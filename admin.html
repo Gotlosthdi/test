@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Astro Detailing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-grid { padding: 20px; display: grid; grid-template-columns: 1fr 3fr; gap: 20px; }
+        .stats-panel { background: #1a1a1a; padding: 20px; border-radius: 10px; height: fit-content; }
+        .job-card { 
+            background: #252525; 
+            padding: 20px; 
+            margin-bottom: 15px; 
+            border-radius: 8px; 
+            display: flex; 
+            justify-content: space-between;
+            border-left: 4px solid var(--gold);
+        }
+        .status-badge { padding: 5px 10px; border-radius: 15px; font-size: 12px; text-transform: uppercase; background: #333; }
+        .status-ready { color: #00ff00; }
+        .status-pending { color: #ffcc00; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">ASTRO <span>ADMIN</span></div>
+    </nav>
+
+    <div class="admin-grid">
+        <aside class="stats-panel">
+            <h3>Shop Overview</h3>
+            <p>New Inquiries: <strong>3</strong></p>
+            <p>Cars in Studio: <strong>5</strong></p>
+            <p>Monthly Revenue: <strong>Rs. 1.2M</strong></p>
+        </aside>
+
+        <main class="job-list">
+            <h2>Active Appointments</h2>
+            
+            <div class="job-card">
+                <div>
+                    <h3>Honda Civic RS <span class="status-badge status-pending">In Progress</span></h3>
+                    <p>Package: <strong>NanoLink Eclipse (200 Microns)</strong></p>
+                    <p>Customer: Ahmed Ali | 0300-1234567</p>
+                </div>
+                <div style="text-align: right;">
+                    <p>Date: Dec 30, 2025</p>
+                    <button class="pkg-btn">Update Status</button>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div>
+                    <h3>Toyota Fortuner <span class="status-badge status-ready">Completed</span></h3>
+                    <p>Package: <strong>Nanotek Prime</strong></p>
+                    <p>Customer: Sarah Khan | 0321-9876543</p>
+                </div>
+                <div style="text-align: right;">
+                    <p>Date: Dec 28, 2025</p>
+                    <button class="pkg-btn">Print Warranty</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
