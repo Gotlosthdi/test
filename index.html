@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Detailing | Premium PPF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">ASTRO <span>DETAILING</span></div>
+    </nav>
+
+    <section class="hero">
+        <h1>Protect Your Investment</h1>
+        <p>Premium TPU Paint Protection Film Installation</p>
+    </section>
+
+    <section class="booking-container">
+        <div class="package-selection">
+            <h2>Select Your Protection</h2>
+            <div class="options">
+                <button class="pkg-btn active" onclick="updatePrice('prime')">Nanotek Prime</button>
+                <button class="pkg-btn" onclick="updatePrice('revive')">NanoLink Revive</button>
+                <button class="pkg-btn" onclick="updatePrice('eclipse')">NanoLink Eclipse</button>
+            </div>
+
+            <div class="details-card">
+                <h3 id="film-name">Nanotek Prime</h3>
+                <p id="film-desc">185 Microns • 6 Year Durability</p>
+                <div class="price-tag">Rs. <span id="price-display">245,000</span>/-</div>
+                <p class="warranty-badge">Warranty: <span id="warranty-display">3 Years</span></p>
+            </div>
+        </div>
+
+        <form id="booking-form">
+            <h3>Book an Inspection</h3>
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Car Model (e.g. Honda Civic)" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="date" required>
+            <button type="submit" class="submit-btn">Request Appointment</button>
+        </form>
+    </section>
+</body>
+</html>
