@@ -1,46 +1,53 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-import { getFirestore, collection, onSnapshot, query, orderBy } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-
-// Your specific Firebase configuration
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
-  apiKey: "AIzaSyA3FSS7VpntotP2jcSTi9dDHDr2bcPlrbU",
+  apiKey: "AIzaSyA3FSS7VpntotP2jcStI9dDHDr2bCPlrbU",
   authDomain: "astro-3c018.firebaseapp.com",
   projectId: "astro-3c018",
   storageBucket: "astro-3c018.firebasestorage.app",
   messagingSenderId: "76399040658",
-  appId: "1:76399040658:web:5b055bbaca073115cd6e4b",
-  measurementId: "G-ZHDH3127FD"
+  appId: "1:76399040658:web:3451d96a770c918acd6e4b",
+  measurementId: "G-EX1V5ZG5VZ"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_PROJECT_ID.appspot.com",
+    messagingSenderId: "YOUR_SENDER_ID",
+    appId: "YOUR_APP_ID"
+};
+
+// Initialize Firebase
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
 const db = getFirestore(app);
 
-// Logic to check if you are logged in
-onAuthStateChanged(auth, (user) => {
-    const adminContent = document.getElementById('admin-content');
-    const loginForm = document.getElementById('login-section');
+// Handle Booking Form
+document.getElementById('booking-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const bookingData = {
+        customerName: e.target[0].value,
+        carModel: e.target[1].value,
+        phone: e.target[2].value,
+        date: e.target[3].value,
+        package: document.getElementById('film-name').innerText,
+        status: "New Inquiry",
+        createdAt: serverTimestamp()
+    };
 
-    if (user) {
-        // User is signed in, show the dashboard
-        adminContent.style.display = 'block';
-        loginForm.style.display = 'none';
-        loadBookings();
-    } else {
-        // No user is signed in, show login form
-        adminContent.style.display = 'none';
-        loginForm.style.display = 'block';
+    try {
+        await addDoc(collection(db, "bookings"), bookingData);
+        alert("Booking Sent to Astro Detailing! We will call you shortly.");
+        e.target.reset();
+    } catch (error) {
+        console.error("Error: ", error);
     }
 });
-
-// Function to log in
-window.login = async () => {
-    const email = document.getElementById('email').value;
-    const pass = document.getElementById('password').value;
-    try {
-        await signInWithEmailAndPassword(auth, email, pass);
-    } catch (error) {
-        alert("Access Denied: " + error.message);
-    }
-};
