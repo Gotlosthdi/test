@@ -1,0 +1,1294 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Comprehensive Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .option-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        .option-btn:disabled {
+            cursor: default;
+        }
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans pb-20">
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-200 p-4">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-xl md:text-2xl font-bold text-slate-800">Big brain test for dia da kewlest</h1>
+                <p class="text-sm text-slate-500 hidden md:block">Earth Science, Physics, Chemistry, and Biology</p>
+            </div>
+            <div class="text-lg font-semibold bg-blue-100 border border-blue-200 text-blue-800 px-4 py-2 rounded-xl shadow-sm flex items-center gap-2">
+                <span>Score:</span>
+                <span id="score" class="text-2xl font-bold">0</span> 
+                <span class="text-blue-400">/</span> 
+                <span id="total">200</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto p-4 mt-6" id="quiz-container">
+        <!-- Questions will be injected here via JavaScript -->
+        <div id="loading" class="text-center py-20 text-slate-500 text-lg">
+            Loading 200 questions...
+        </div>
+    </main>
+
+    <!-- Raw Data Embed (Hidden from view, parsed by JS) -->
+    <script type="text/template" id="raw-questions">
+--- PAGE 1 ---
+Grand Comprehensive Test
+200 Multiple-Choice Questions covering Earth Science, Physics, Chemistry, and Biology
+1. What is the outermost layer of the Earth called?
+✓ A. Crust
+B. Mantle
+C. Outer Core
+D. Inner Core
+2. Which layer makes up about 84% of Earth's volume?
+A. Crust
+✓ B. Mantle
+C. Outer Core
+D. Inner Core
+3. What state of matter is the Earth's outer core?
+A. Solid
+✓ B. Liquid
+C. Gas
+D. Plasma
+4. The boundary between the mantle and core is called the:
+A. Mohorovičić Discontinuity
+✓ B. Gutenberg Discontinuity
+C. Lehmann Discontinuity
+D. Conrad Discontinuity
+5. Ideal soil consists of roughly what percentage of minerals?
+Α. 25%
+✓ B. 45%
+C. 5%
+D. 84%
+1
+--- PAGE 2 ---
+6. Which type of soil has the largest particle size?
+A. Clay
+B. Silt
+✓ C. Sand
+D. Loam
+7. Igneous rocks are formed by:
+A. Cementation of sediments
+B. Metamorphism
+✓ C. Solidification of molten rock
+D. Weathering
+8. Which of the following is an example of a sedimentary rock?
+A. Basalt
+ B. Limestone
+C. Granite
+D. Marble
+9. Metamorphic rocks arise from:
+✓ A. Transformation of existing rock
+B. Volcanic eruptions
+C. Soil compaction
+D. Melting of magma
+10. Physical weathering involves:
+A. Alteration of chemical composition
+✓ B. Breakdown of rocks into smaller particles
+C. Melting of rocks
+D. Formation of magma
+11. What causes the Earth's seasons?
+A. Distance from the sun
+B. Ocean currents
+ C. Earth's tilted axis
+D. Moon's gravity
+2
+--- PAGE 3 ---
+12. How long does it take for the Earth to complete one revolution around the sun?
+A. 24 hours
+B. 30 days
+C. 365 $1/4$ days
+D. 365 days exactly
+13. The greenhouse effect is primarily caused by:
+A. Ozone depletion
+✓ B. Heat-trapping gases in the atmosphere
+C. Solar flares
+D. Volcanic ash
+14. Which of the following is a primary driver of climate change?
+A. Tidal waves
+✓ B. Burning of fossil fuels
+C. Earthquakes
+D. Magnetic field reversal
+15. What does GIS stand for?
+A. Global Information System
+✓ B. Geographic Information System
+C. Geological Index System
+D. Global Indexing Software
+16. In GIS, which component is considered the 'heart' of the system?
+A. Hardware
+B. Software
+✓ C. Data
+D. Methods
+17. Remote sensing is the science of acquiring information about the Earth's surface:
+A. By drilling deep boreholes
+✓ B. Without being in physical contact with it
+C. By physical soil sampling
+D. Through chemical analysis
+3
+--- PAGE 4 ---
+18. Which decade is recorded as the warmest on record?
+Α. 1990-1999
+Β. 2000-2009
+ C. 2015-2024
+D. 1980-1989
+19. Chlorofluorocarbons (CFCs) act as potent:
+A. Fertilizers
+✓ B. Greenhouse gases
+C. Ozone creators
+D. Coolants in the ocean
+20. An active remote sensing system:
+A. Relies on sunlight
+✓ B. Generates its own artificial energy source
+C. Uses only cameras
+D. Measures atmospheric pressure
+21. Digestion begins in the:
+A. Stomach
+B. Esophagus
+C. Small Intestine
+✓ D. Mouth
+22. The muscular contractions that move food down the esophagus are called:
+✓ A. Peristalsis
+B. Churning
+C. Absorption
+D. Mastication
+23. Which organ produces bile for digestion?
+A. Pancreas
+B. Stomach
+✓ C. Liver
+D. Kidney
+4
+--- PAGE 5 ---
+24. Villi, which maximize nutrient absorption, are found in the:
+A. Large Intestine
+B. Stomach
+C. Esophagus
+✓ D. Small Intestine
+25. Carbohydrates are converted into what for immediate cellular energy?
+A. Amino acids
+✓ B. Glucose
+C. Fatty acids
+D. Glycerol
+26. Proteins break down into:
+A. Glucose
+B. Vitamins
+✓ C. Amino acids
+D. Lipids
+27. Which of the following is a fat-soluble vitamin?
+A. Vitamin B
+B. Vitamin C
+✓ C. Vitamin D
+D. Vitamin B12
+28. Mitochondria convert glucose and fatty acids into:
+✓ A. ATP
+B. DNA
+C. RNA
+D. Enzymes
+29. The organ responsible for filtering blood continuously and removing waste is the:
+A. Heart
+B. Liver
+✓ C. Kidney
+D. Brain
+5
+--- PAGE 6 ---
+30. Which immune defense provides a rapid, non-specific response?
+A. Adaptive Immunity
+✓ B. Innate Immunity
+C. Immunological Memory
+D. Vaccines
+31. An ecosystem consists of:
+A. Only living organisms
+B. Only physical environments
+✓ C. Biotic and abiotic components
+D. Only animals and plants
+32. Which of the following is an abiotic factor?
+A. Producers
+✓ B. Sunlight
+C. Consumers
+D. Decomposers
+33. Marine ecosystems cover approximately what percentage of the planet?
+A. 50%
+B. 60%
+✓ C. 75%
+D. 90%
+34. Energy flow in an ecosystem is:
+A. Circular
+✓ B. Unidirectional
+C. Reversible
+D. Random
+35. According to the 10% rule in ecological pyramids, the remaining 90% of energy is
+ mostly:
+A. Transferred to the next level
+B. Stored as fat
+✓ C. Lost as heat or used for life processes
+D. Recycled by decomposers
+6
+--- PAGE 7 ---
+36. Organisms that capture solar energy through photosynthesis are called:
+✓ A. Primary producers
+B. Primary consumers
+C. Secondary consumers
+D. Decomposers
+37. The carbon cycle involves the interchange of carbon compounds through processes
+ like:
+✓ A. Photosynthesis and Respiration
+B. Evaporation and Condensation
+C. Magnetism and Electricity
+D. Friction and Inertia
+38. In the carbon cycle, autotrophs absorb carbon in the form of:
+A. Glucose
+✓ B. Carbon dioxide (CO2)
+C. Methane
+D. Carbon monoxide
+39. Which biome is characterized by extreme cold and permafrost?
+A. Tropical Rainforest
+B. Grassland
+C. Desert
+✓ D. Tundra
+40. Which group of organisms recycles nutrients by breaking down dead matter?
+A. Producers
+B. Herbivores
+✓ C. Decomposers
+D. Carnivores
+41. A magnetic field is produced by:
+A. Stationary electric charges
+✓ B. Moving electric charges
+C. Insulators
+D. Neutral particles
+7
+--- PAGE 8 ---
+42. Faraday's Law of electromagnetic induction states that:
+A. Current is proportional to voltage
+✓ B. A changing magnetic field induces an electric current
+C. Like charges repel
+D. Resistance opposes current
+43. The Sl unit of electric charge is the:
+A. Ampere
+B. Volt
+✓ C. Coulomb
+D. Ohm
+44. Which type of current reverses direction periodically?
+A. Direct Current (DC)
+✓ B. Alternating Current (AC)
+C. Static Current
+D. Magnetic Current
+45. Conventional current is defined as the flow of:
+A. Electrons from negative to positive
+✓ B. Positive charge from positive to negative
+C. Protons from negative to positive
+D. Neutrons from positive to negative
+46. In a series circuit, which quantity remains the same across all components?
+A. Voltage
+B. Resistance
+C. Power
+✓ D. Current
+47. Ohm's law defines the relationship between voltage, current, and resistance as:
+A. $V=1/R$
+B. $I=V^{*}R$
+C. $V=I^{*}R$
+D. $R=V^{*}I$
+8
+--- PAGE 9 ---
+48. Which electromagnetic wave has the longest wavelength?
+✓ A. Radio Waves
+B. Microwaves
+C. X-rays
+D. Gamma Rays
+49. Which type of electromagnetic radiation is used in medical imaging of bones?
+A. Infrared
+B. Visible Light
+✓ C. X-rays
+D. Microwaves
+50. Electric motors work by:
+✓ A. Using magnetic fields to exert torque on a current-carrying loop
+B. Converting mechanical energy into electrical energy
+C. Using static electricity to create heat
+D. Inducing radioactive decay
+51. Heredity is the biological process by which:
+A. Organisms acquire energy
+✓ B. Parents transmit genetic info to children
+C. Cells divide into two
+D. Proteins are folded
+52. The iconic double helix structure of DNA was discovered in 1953 by:
+A. Mendel
+B. Newton
+✓ C. Watson & Crick
+D. Darwin
+53. In DNA, Adenine (A) always pairs with:
+A. Cytosine (C)
+B. Guanine (G)
+✓ C. Thymine (T)
+D. Uracil (U)
+9
+--- PAGE 10 ---
+54. Humans typically have how many pairs of chromosomes?
+✓ A. 23
+B. 46
+C. 22
+D. 44
+55. Genes act as instructions primarily for making:
+A. Carbohydrates
+B. Lipids
+✓ C. Proteins
+D. Minerals
+56. The central dogma of molecular biology is:
+A. RNA DNA
+B. DNA
+Protein
+RNA
+Protein
+DNA
+C. Protein → RNA
+D. DNA → Protein  RNA
+57. Which process during meiosis creates entirely new gene combinations?
+A. Translation
+B. Transcription
+✓ C. Crossing over (Recombination)
+D. Mitosis
+58. An allele that masks the effect of a recessive allele is called:
+✓ A. Dominant
+B. Co-dominant
+C. Linked
+D. Mutated
+59. Down Syndrome is commonly caused by an extra copy of which chromosome?
+A. Chromosome X
+B. Chromosome 18
+✓ C. Chromosome 21
+D. Chromosome 1
+10
+--- PAGE 11 ---
+60. Height is an example of a trait influenced by:
+A. Only one gene
+B. Only environmental factors
+✓ C. Multiple genes and environmental factors
+D. A single recessive allele
+61. In science, work is calculated as:
+A. Force / Distance
+B. Mass Acceleration
+✓ C. Force * Distance
+D. Mass * Velocity
+62. The SI unit of work and energy is the:
+A. Newton
+✓ B. Joule
+C. Watt
+D. Pascal
+63. Kinetic energy is the energy possessed by an object due to its:
+A. Height
+✓ B. Motion
+C. Temperature
+D. Chemical bonds
+64. Gravitational potential energy depends on mass, gravity, and:
+A. Speed
+B. Time
+✓ C. Height
+D. Volume
+65. The Principle of Conservation of Energy states that energy:
+A. Can be created from nothing
+B. Can be destroyed in a vacuum
+✓ C. Can neither be created nor destroyed, only transformed
+D. Is always lost as friction
+11
+--- PAGE 12 ---
+66. Weight is a vector quantity that represents the:
+A. Amount of matter in a body
+✓ B. Force of gravity acting on a body
+C. Mass of a body divided by volume
+D. Density of an object
+67. Sound is an example of what type of wave?
+A. Transverse wave
+B. Electromagnetic wave
+✓ C. Longitudinal mechanical wave
+D. Light wave
+68. Snell's Law mathematically describes:
+A. Reflection of light
+B. Diffraction of sound
+✓ C. Refraction of light
+D. Polarization of light
+69. A convex lens generally:
+✓ A. Converges light rays
+B. Diverges light rays
+C. Blocks light rays
+D. Reflects light rays entirely
+70. The speed of light in a vacuum is approximately:
+A. $3\times10^{\wedge}5~m/s$
+B. $-3\times10^{\wedge}8~m/s$
+C. $3\times10^{\wedge}10~m/s$
+D. $3\times10^{\wedge}12~m/s$
+71. The Sl base unit for mass is the:
+A. Gram
+B. Pound
+✓ C. Kilogram
+D. Ounce
+12
+--- PAGE 13 ---
+72. Velocity describes how fast an object's position changes and includes:
+A. Only magnitude
+B. Only direction
+✓ C. Both magnitude and direction
+D. Neither magnitude nor direction
+73. Acceleration is defined as the change in:
+A. Position over time
+✓ B. Velocity over time
+C. Mass over time
+D. Force over time
+74. Newton's First Law of Motion is also known as the Law of:
+A. Gravity
+✓ B. Inertia
+C. Action-Reaction
+D. Acceleration
+75. Newton's Second Law is expressed by the formula:
+A. $F=m/a$
+ B. $F=ma$
+C. $F=a/m$
+D. $F=m+a$
+76. Which law states 'For every action, there is an equal and opposite reaction'?
+A. Newton's First Law
+B. Newton's Second Law
+✓ C. Newton's Third Law
+D. Law of Universal Gravitation
+77. Linear momentum is the product of mass and:
+A. Acceleration
+✓ B. Velocity
+C. Distance
+D. Time
+13
+--- PAGE 14 ---
+78. Centripetal force is required to keep an object moving in a circle and always acts:
+ A. Tangential to the circle
+B. Away from the center
+✓ C. Toward the center
+D. In the direction of motion
+79. Friction is a force that:
+A. Accelerates objects
+✓ B. Opposes motion
+C. Acts perpendicular to displacement
+D. Has no effect on moving objects
+80. A watt (W) is a derived Sl unit for:
+A. Force
+B. Energy
+✓ C. Power
+D. Pressure
+81. Which element is the foundation of life due to its ability to form four covalent bonds?
+A. Oxygen
+B. Hydrogen
+✓ C. Carbon
+D. Nitrogen
+82. What is the primary function of carbohydrates like glucose?
+A. Long-term energy storage
+B. Genetic blueprint
+✓ C. Primary energy source
+D. Catalyze reactions
+83. Which biomolecules are hydrophobic and serve as long-term energy storage?
+A. Proteins
+B. Nucleic Acids
+C. Carbohydrates
+✓ D. Lipids
+14
+--- PAGE 15 ---
+84. Proteins are polymers constructed from monomers called:
+A. Nucleotides
+✓ B. Amino acids
+C. Monosaccharides
+D. Fatty acids
+85. Hemoglobin, which carries oxygen in the blood, is an example of a:
+A. Carbohydrate
+B. Lipid
+C. Nucleic Acid
+✓ D. Protein
+86. Nucleic acids like DNA and RNA are polymers of:
+A. Amino acids
+✓ B. Nucleotides
+C. Sugars
+D. Enzymes
+87. The process where monomers join together by releasing water molecules is called:
+A. Hydrolysis
+✓ B. Dehydration Synthesis
+C. Denaturation
+D. Oxidation
+88. Hydrolysis is the process of:
+✓ A. Breaking down polymers by adding water
+B. Building polymers by removing water
+C. Freezing water in cells
+D. Boiling water for energy
+89. Enzymes are specialized biomolecules that speed up biochemical reactions. They
+ belong to which class?
+A. Carbohydrates
+B. Lipids
+✓ C. Proteins
+D. Nucleic Acids
+15
+--- PAGE 16 ---
+90. Cellulose, which forms rigid plant cell walls, is an example of a:
+✓ A. Carbohydrate
+B. Lipid
+C. Protein
+D. Nucleic Acid
+91. The cell membrane is primarily structured as a:
+A. Protein single layer
+B. Carbohydrate lattice
+✓ C. Phospholipid bilayer
+D. Nucleic acid mesh
+92. Which organelle acts as the control center and houses the cell's DNA?
+A. Mitochondria
+✓ B. Nucleus
+C. Ribosome
+D. Golgi Apparatus
+93. Mitochondria are often referred to as the powerhouse of the cell because they
+ produce:
+A. DNA
+B. Lipids
+✓ C. ATP
+D. Glucose
+94. The Rough Endoplasmic Reticulum (ER) is 'rough' because its surface is studded
+ with:
+A. Lysosomes
+✓ B. Ribosomes
+C. Mitochondria
+D. Vacuoles
+95. Which organelle modifies, sorts, and packages proteins into vesicles?
+A. Smooth ER
+B. Nucleus
+✓ C. Golgi Apparatus
+D. Lysosome
+16
+--- PAGE 17 ---
+96. Ribosomes are the cellular sites of:
+A. Lipid synthesis
+✓ B. Protein synthesis
+C. ATP production
+D. DNA replication
+97. Which organelle contains powerful digestive enzymes to break down waste?
+A. Vacuole
+B. Ribosome
+✓ C. Lysosome
+D. Chloroplast
+98. In plant cells, which large organelle stores water and maintains turgor pressure?
+A. Lysosome
+B. Mitochondria
+✓ C. Central Vacuole
+D. Golgi Apparatus
+99. Chloroplasts are responsible for converting sunlight into chemical energy through:
+A. Cellular respiration
+✓ B. Photosynthesis
+C. Fermentation
+D. Digestion
+100. Unlike eukaryotic cells, prokaryotic cells (like bacteria) lack:
+A. A cell membrane
+B. Ribosomes
+ C. A membrane-bound nucleus
+D. DNA
+101. What is the smallest unit of matter that retains elemental properties?
+A. Molecule
+B. Cell
+✓ C. Atom
+D. Organelle
+17
+--- PAGE 18 ---
+102. Cells with similar structure and function group together to form:
+A. Organs
+✓ B. Tissues
+C. Organ systems
+D. Organisms
+103. All individuals of a single species living in the same area form a:
+A. Community
+✓ B. Population
+C. Ecosystem
+D. Biosphere
+104. Multiple populations of different species coexisting in the same area form a:
+✓ A. Community
+B. Population
+C. Biome
+D. Biosphere
+105. The global zone where all life exists on Earth is the:
+A. Ecosystem
+B. Biome
+✓ C. Biosphere
+D. Community
+106. Synthetic polymers like polyethylene (PE) and PET are common pollutants classified
+ as:
+A. Heavy metals
+✓ B. Plastics
+C. POPS
+D. Gaseous pollutants
+107. Mercury, lead, and arsenic are examples of toxic:
+A. Plastics
+✓ B. Heavy metals
+C. Industrial solvents
+D. Gases
+18
+--- PAGE 19 ---
+108. Carbon monoxide and sulfur dioxide are primarily classified as:
+A. Agrochemicals
+B. Heavy metals
+✓ C. Gaseous pollutants
+D. POPS
+109. Pesticides, dioxins, and PCBs are examples of:
+✓ A. Persistent Organic Pollutants (POPs)
+B. Green solvents
+C. Biodegradable plastics
+D. Heavy metals
+110. Mechanical recycling of plastics involves:
+A. Heating in the absence of oxygen
+B. Using solvents to break chemical bonds
+✓ C. Physically sorting, shredding, and melting without chemical alteration
+D. Treating with steam to produce syngas
+111. Pyrolysis is a chemical recycling method that involves heating plastic in:
+A. Water
+B. Excess oxygen
+✓ C. The absence of oxygen
+D. Acid
+112. Which wastewater treatment uses materials like activated carbon to bind and remove
+ organic compounds?
+A. Coagulation
+✓ B. Adsorption
+C. Oxidative Degradation
+D. Filtration
+113. Green Chemistry emphasizes:
+A. Maximum yield regardless of toxicity
+✓ B. Pollution prevention at the source
+C. Using only organic compounds
+D. Discharging waste into the ocean
+19
+--- PAGE 20 ---
+114. The best source of hazard information for laboratory chemicals is the:
+A. Textbook glossary
+✓ B. Material Safety Data Sheet (MSDS/SDS)
+C. Lab partner
+D. Chemical dictionary
+115. In a laboratory, flammable materials should be stored:
+A. Next to corrosive substances
+✓ B. Separately from corrosive substances
+C. On an open bench
+D. In a standard refrigerator
+116. When handling dangerous chemicals, which of the following PPE is mandatory?
+A. Sandals
+B. Short sleeves
+✓ C. Laboratory coat and safety glasses
+D. Cloth gloves only
+117. Hazardous chemicals should never be disposed of by:
+A. Using certified waste contractors
+B. Following SDS instructions
+✓ C. Pouring them down laboratory wash basins and drains
+D. Segregating them into compliant containers
+118. A Spill Kit in a laboratory is meant for:
+A. Cleaning glassware
+✓ B. Managing minor chemical spills safely
+C. Extinguishing large fires
+D. Storing extra chemicals
+119. Non-hazardous waste, like food scraps or clean paper, should be:
+A. Mixed with toxic waste
+B. Stored in heavy-duty hazardous containers
+✓ C. Segregated from hazardous waste
+D. Burned in the lab
+20
+--- PAGE 21 ---
+120. According to lab safety, what should you do before leaving the laboratory?
+✓ A. Wash your hands thoroughly
+B. Take your lab coat home to wash
+C. Leave chemical bottles open
+D. Turn off all lights but leave equipment running
+121. Which characteristic indicates a chemical is easily able to catch fire?
+A. Corrosivity
+B. Reactivity
+C. Toxicity
+✓ D. Ignitability
+122. A chemical that can eat through metal or cause severe skin burns is described as:
+A. Ignitable
+✓ B. Corrosive
+C. Toxic
+D. Radioactive
+123. Chemicals that may explode or release toxic gases when heated or mixed with water
+ are:
+✓ A. Reactive
+B. Corrosive
+C. Infectious
+D. Non-hazardous
+124. Table salt (sodium chloride) and neutralized acids (pH 6-9.5) are generally classified
+ as:
+A. Hazardous
+B. Toxic
+✔C. Non-hazardous
+D. Reactive
+125. Nanomaterials have at least one dimension in the range of:
+A. 1-100 millimeters
+B. 1-100 micrometers
+C. 1-100 nanometers
+D. 1-100 picometers
+21
+--- PAGE 22 ---
+126. A nanoparticle or quantum dot, where all three dimensions are in the nanoscale, is
+a:
+✓ A. OD nanomaterial
+B. 1D nanomaterial
+C. 2D nanomaterial
+D. 3D nanomaterial
+127. Nanowires and carbon nanotubes are examples of:
+A. OD nanomaterials
+✓ B. 1D nanomaterials
+C. 2D nanomaterials
+D. 3D nanomaterials
+128. One nanometer (nm) is equal to:
+A. One millionth of a meter
+✓ B. One billionth of a meter
+C. One thousandth of a meter
+D. One trillionth of a meter
+129. Advanced nanomaterials often exhibit:
+A. Exactly the same properties as bulk materials
+B. Lower strength and higher weight
+✓ C. Enhanced properties designed for superior performance
+D. Only magnetic changes
+130. Nanotechnology is highly interdisciplinary. Which field is least likely to be a core
+ part of it?
+A. Physics
+B. Biology
+✓ C. Astrology
+D. Materials science
+131. Ceramics are inorganic, non-metallic solid materials primarily composed of:
+A. Plastics and polymers
+✓ B. Clay, minerals, or oxides
+C. Pure carbon
+D. Wood and resin
+22
+--- PAGE 23 ---
+132. Ceramics are typically hardened through a process of:
+A. Freezing
+✓ B. High-temperature firing in a kiln
+C. Chemical catalysis
+D. High-pressure compaction
+133. Which of the following is a common disadvantage of ceramics?
+A. High strength
+B. Heat resistance
+✓ C. Brittleness
+D. Chemical resistance
+134. Alumina and Zirconia are examples of which type of ceramic?
+A. Carbide Ceramics
+B. Nitride Ceramics
+C. Silicate Ceramics
+✓ D. Oxide Ceramics
+135. Tungsten carbide and silicon carbide are known for their exceptional hardness and
+ are classified as:
+A. Oxide Ceramics
+✓ B. Carbide Ceramics
+C. Silicate Ceramics
+D. Glass Ceramics
+136. Silicon nitride and aluminum nitride possess excellent thermal conductivity and
+ belong to:
+✓ A. Nitride Ceramics
+B. Oxide Ceramics
+C. Silicate Ceramics
+D. Glass Ceramics
+137. Porcelain and earthenware, commonly used for tableware, are examples of:
+A. Carbide Ceramics
+✓ B. Silicate Ceramics
+C. Nitride Ceramics
+D. Oxide Ceramics
+23
+--- PAGE 24 ---
+138. Which type of ceramic is formed by the controlled crystallization of glass?
+A. Silicate Ceramics
+✓ B. Glass Ceramics
+C. Carbide Ceramics
+D. Nitride Ceramics
+139. Ceramics generally have very poor:
+A. Hardness
+B. Electrical insulation
+✓ C. Thermal shock resistance
+D. Chemical resistance
+140. Because they are excellent electrical insulators, ceramics are widely used in:
+ A. Clothing
+✓ B. Electronics and Electrical Engineering
+C. Food packaging
+D. Paper manufacturing
+141. A mineral is defined as a naturally occurring, inorganic solid with a definite:
+A. Organic composition
+✓ B. Chemical composition and ordered atomic structure
+C. Liquid state
+D. Gaseous phase
+142. Table salt is the common name for the mineral:
+A. Silicon dioxide
+B. Calcium carbonate
+✓ C. Sodium chloride
+D. Iron oxide
+143. Quartz is chemically known as:
+✓ A. Silicon dioxide
+B. Sodium chloride
+C. Calcium carbonate
+D. Magnesium oxide
+24
+--- PAGE 25 ---
+144. Minerals formed directly from the cooling of magma are classified as:
+A. Secondary minerals
+✓ B. Primary minerals
+C. Tertiary minerals
+D. Trace minerals
+145. Which of the following is a metallic mineral?
+A. Limestone
+B. Gypsum
+✓ C. Iron ore
+D. Mica
+146. Limestone and mica are examples of:
+A. Metallic minerals
+ B. Non-metallic minerals
+C. Synthetic minerals
+D. Trace minerals
+147. In nutrition, calcium and phosphorus are considered:
+A. Trace minerals
+✓ B. Macrominerals
+C. Vitamins
+D. Proteins
+148. Polymers are formed by reacting constituent elements called:
+A. Isotopes
+✓ B. Monomers
+C. Neutrons
+D. Cations
+149. Cellulose, starch, and proteins are examples of:
+A. Synthetic polymers
+B. Semi-synthetic polymers
+✓ C. Natural polymers
+D. Inorganic polymers
+25
+--- PAGE 26 ---
+150. Plastic and nylon-6,6 are examples of:
+A. Natural polymers
+B. Semi-synthetic polymers
+✓ C. Synthetic polymers
+D. Biopolymers
+151. Acids are characterized in an aqueous medium by a:
+A. Bitter taste
+B. Sweet taste
+✓ C. Sour taste
+D. Salty taste
+152. Bases are characterized by a bitter taste and a tendency to feel:
+A. Rough
+✓ B. Slippery
+C. Dry
+D. Hot
+153. Water-soluble bases are specifically known as:
+✓ A. Alkalis
+B. Salts
+C. Acids
+D. Halogens
+154. When an acid reacts with a metal, it generally displaces hydrogen to evolve:
+A. Oxygen gas
+B. Carbon dioxide gas
+✓ C. Hydrogen gas
+D. Nitrogen gas
+155. The reaction between an acid and a base to produce salt and water is called:
+A. Combustion
+B. Precipitation
+✓ C. Neutralization
+D. Oxidation
+26
+--- PAGE 27 ---
+156. Acids in an aqueous solution produce which ions responsible for conductivity?
+A. Hydroxide (OH-) ions
+✓ B. Hydrogen (H+) ions
+C. Sodium (Na+) ions
+D. Chloride (Cl-) ions
+157. In a balanced chemical equation, what is placed in front of formulas to balance the
+ atoms?
+A. Subscripts
+B. Exponents
+✓ C. Coefficients
+D. Superscripts
+158. According to the law of conservation of mass, in a chemical reaction atoms are:
+A. Created
+B. Destroyed
+✓ C. Neither created nor destroyed
+D. Converted to energy
+159. Why is it incorrect to change subscripts when balancing a chemical equation?
+A. It is mathematically harder
+✓ B. It changes the identity of the substance
+C. It makes the equation too long
+D. It violates thermodynamic laws
+160. A chemical reaction in which a solid forms from a solution is observed as:
+A. Evaporation
+B. Melting
+✓ C. Precipitation
+D. Condensation
+161. The scientific method is an organized plan for gathering, organizing, and
+ communicating info to:
+✓ A. Solve a problem
+B. Create confusion
+C. Avoid experiments
+D. Prove opinions
+27
+--- PAGE 28 ---
+162. Observations are made using:
+A. Only sight
+B. Only hearing
+✓ C. The five senses
+D. Calculators only
+163. Which type of observation is considered more accurate because it is measurable
+ and involves numbers?
+A. Qualitative
+✓ B. Quantitative
+C. Subjective
+D. Theoretical
+164. A tentative explanation of observations that can be tested is a:
+A. Law
+B. Model
+C. Theory
+✓ D. Hypothesis
+165. Deductive reasoning moves from:
+A. Specific to general
+✓ B. General to specific
+C. Hypothesis to observation
+D. Law to theory
+166. Inductive reasoning moves from:
+A. General to specific
+B. Theory to law
+✓ C. Specific observations to a general principle
+D. Experiment to hypothesis
+167. A hypothesis that is repeatedly tested without ever being falsified can become a:
+A. Law
+B. Model
+✓ C. Theory
+D. Guess
+28
+--- PAGE 29 ---
+168. A uniform or constant fact of nature that describes observations without explaining
+ them is a:
+✓ A. Scientific Law
+B. Scientific Theory
+C. Hypothesis
+D. Model
+169. A representation that makes difficult-to-observe things easier to understand (e.g., a
+ globe) is a:
+A. Law
+B. Theory
+✓ C. Scientific Model
+D. Hypothesis
+170. Which type of graph is best for showing trends or continuous changes over time?
+A. Pie chart
+B. Bar graph
+✓ C. Line graph
+D. Scatter plot
+171. Which part of the Earth's core is solid?
+A. Outer Core
+✓ B. Inner Core
+C. Mantle
+D. Crust
+172. Granite is mainly found in which type of crust?
+A. Oceanic crust
+✓ B. Continental crust
+C. Mantle
+D. Core
+173. Which soil type holds water well but can be dense and poorly drained?
+A. Sandy Soil
+✓ B. Clay Soil
+C. Loam Soil
+D. Gravel
+29
+--- PAGE 30 ---
+174. A balanced mixture of sand, silt, and clay ideal for agriculture is called:
+✓ A. Loam Soil
+B. Sandy Soil
+C. Clay Soil
+D. Silt Soil
+175. The Earth's atmosphere extends more than 100km up, but 90% is within:
+A. 50km
+B. 30km
+✓ C. 16km
+D. 5km
+176. Linear momentum is defined as the product of mass and:
+A. Acceleration
+✓ B. Velocity
+C. Distance
+D. Time
+177. Impulse (J) is defined as the change in momentum caused by a force acting over:
+A. Distance
+B. Volume
+✓ C. Time
+D. Mass
+178. In an isolated system, the Law of Conservation of Linear Momentum states that total
+ momentum:
+A. Increases
+B. Decreases to zero
+✓ C. Remains constant
+D. Fluctuates
+179. Centripetal acceleration is directed:
+A. Away from the center
+✓ B. Toward the center of the circle
+C. Tangential to the circle
+D. Perpendicular to the plane
+30
+--- PAGE 31 ---
+180. The force of friction acts in which direction relative to displacement?
+A. Same direction
+B. Perpendicular
+✓ C. Opposite direction
+D. At a 45 degree angle
+181. A 1D nanomaterial has how many dimensions in the nanoscale?
+A. Zero
+B. One
+✓ C. Two
+D. Three
+182. Nanolayers, surface coatings, and thin films are examples of:
+A. OD nanomaterials
+B. 1D nanomaterials
+✓ C. 2D nanomaterials
+D. 3D nanomaterials
+183. Nanoparticles, colloids, and quantum dots are examples of:
+✓ A. OD nanomaterials
+B. 1D nanomaterials
+C. 2D nanomaterials
+D. 3D nanomaterials
+184. Which of the following is considered a macromineral?
+A. Iron
+B. Zinc
+✓ C. Calcium
+D. lodine
+185. Which of the following is considered a trace mineral?
+A. Calcium
+B. Phosphorus
+C. Magnesium
+✓ D. Iron
+31
+--- PAGE 32 ---
+186. Cellulose nitrate is classified as what kind of polymer?
+A. Natural
+B. Synthetic
+✓ C. Semi-synthetic
+D. Inorganic
+187. Polyether and Nylon are examples of:
+A. Natural polymers
+✓ B. Synthetic polymers
+C. Semi-synthetic polymers
+D. Biopolymers
+188. Starch and rubber are examples of:
+A. Synthetic polymers
+B. Semi-synthetic polymers
+✓ C. Natural polymers
+D. Metallic polymers
+189. When acids react with metal carbonates, they produce salt, water, and:
+A. Hydrogen gas
+B. Oxygen gas
+✓ C. Carbon dioxide gas
+D. Nitrogen gas
+190. A chemical equation is a mathematical statement symbolizing the formation of:
+A. Reactants from products
+✓ B. Products from reactants
+C. Atoms from molecules
+D. Elements from compounds
+191. What is the unit of Force?
+A. Joule
+B. Watt
+✓ C. Newton
+D. Ampere
+32
+--- PAGE 33 ---
+192. The reaction of hydrogen and oxygen to form water is an example of:
+A. Physical change
+✓ B. Chemical reaction
+C. Nuclear fission
+D. Sublimation
+193. Which part of the scientific method involves testing the hypothesis?
+A. Observation
+✓ B. Experiment
+C. Conclusion
+D. Data Collection
+194. The Sl unit for temperature is:
+A. Celsius
+B. Fahrenheit
+✓ C. Kelvin
+D. Rankine
+195. Which graph is best to compare different items?
+A. Line graph
+✓ B. Bar graph
+C. Pie chart
+D. Scatter plot
+196. What part of the cell is known as the 'shipping center'?
+A. Nucleus
+B. Ribosome
+✓ C. Golgi Apparatus
+D. Mitochondria
+197. Which of the following is a non-membrane-bound organelle?
+A. Nucleus
+B. Mitochondria
+✓ C. Ribosome
+D. Lysosome
+33
+--- PAGE 34 ---
+198. In genetics, what term describes a trait that is hidden by a dominant allele?
+A. Co-dominant
+✓ B. Recessive
+C. Mutated
+D. Linked
+199. The process of copying DNA into RNA is called:
+A. Translation
+✓ B. Transcription
+C. Replication
+D. Mutation
+200. Which type of wave requires a medium to travel through?
+A. Electromagnetic wave
+B. Light wave
+✓ C. Mechanical wave
+D. Radio wave
+34
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Read and clean the text
+            let rawText = document.getElementById('raw-questions').textContent;
+            
+            // Clean up LaTeX style math formulas for better HTML rendering
+            rawText = rawText
+                .replace(/\$/g, '')
+                .replace(/\\times/g, '×')
+                .replace(/\{\\wedge\}/g, '^') 
+                .replace(/\^{\\wedge}/g, '^')
+                .replace(/~m\/s/g, ' m/s')
+                .replace(/\\\*/g, '*');
+
+            const questions = parseQuestions(rawText);
+            document.getElementById('total').textContent = questions.length;
+            
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = ''; // Clear loading message
+            
+            let score = 0;
+
+            // Render each question
+            questions.forEach((q, qIndex) => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-xl shadow-sm border border-slate-200 p-5 md:p-8 mb-6 relative";
+
+                const questionText = document.createElement('h2');
+                questionText.className = "text-lg md:text-xl font-semibold text-slate-800 mb-6";
+                questionText.innerHTML = `<span class="text-blue-600 font-bold mr-2">${q.number}.</span> ${q.text}`;
+                card.appendChild(questionText);
+
+                const optionsContainer = document.createElement('div');
+                optionsContainer.className = "flex flex-col gap-3";
+                
+                let answered = false;
+
+                q.options.forEach((opt) => {
+                    const btn = document.createElement('button');
+                    btn.className = "option-btn w-full text-left p-4 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-medium group flex justify-between items-center";
+                    
+                    btn.innerHTML = `
+                        <span class="flex-1">
+                            <span class="font-bold mr-3 text-slate-400 group-hover:text-blue-500 transition-colors">${opt.originalLetter}.</span> 
+                            ${opt.text}
+                        </span>
+                        <span class="status-icon text-xl font-bold ml-4"></span>
+                    `;
+
+                    btn.addEventListener('click', () => {
+                        if (answered) return;
+                        answered = true;
+
+                        // Disable all buttons in this question
+                        const allBtns = optionsContainer.querySelectorAll('button');
+                        allBtns.forEach(b => {
+                            b.disabled = true;
+                            b.classList.remove('hover:bg-slate-50', 'cursor-pointer');
+                        });
+
+                        const iconSpan = btn.querySelector('.status-icon');
+
+                        if (opt.isCorrect) {
+                            // Selected Correct Option
+                            btn.classList.add('bg-green-50', 'border-green-500', 'text-green-800');
+                            btn.classList.remove('border-slate-200', 'text-slate-700');
+                            iconSpan.textContent = '✓';
+                            iconSpan.classList.add('text-green-600');
+                            
+                            score++;
+                            document.getElementById('score').textContent = score;
+                        } else {
+                            // Selected Incorrect Option
+                            btn.classList.add('bg-red-50', 'border-red-500', 'text-red-800');
+                            btn.classList.remove('border-slate-200', 'text-slate-700');
+                            iconSpan.textContent = '✗';
+                            iconSpan.classList.add('text-red-600');
+
+                            // Reveal the correct option
+                            const correctIndex = q.options.findIndex(o => o.isCorrect);
+                            if (correctIndex !== -1) {
+                                const correctBtn = allBtns[correctIndex];
+                                correctBtn.classList.add('bg-green-50', 'border-green-500', 'text-green-800');
+                                correctBtn.classList.remove('border-slate-200', 'text-slate-700');
+                                const correctIcon = correctBtn.querySelector('.status-icon');
+                                correctIcon.textContent = '✓';
+                                correctIcon.classList.add('text-green-600');
+                            }
+                        }
+                    });
+
+                    optionsContainer.appendChild(btn);
+                });
+
+                card.appendChild(optionsContainer);
+                container.appendChild(card);
+            });
+        });
+
+        // Parser Function to extract questions from the raw text
+        function parseQuestions(text) {
+            const lines = text.split('\n').map(l => l.trim());
+            const questions = [];
+            let currentQ = null;
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i];
+                if (!line) continue; 
+
+                // Skip page markers and standalone numbers (page numbers)
+                if (line.match(/^--- PAGE \d+ ---$/)) continue;
+                if (line.match(/^\d+$/)) continue;
+
+                // Match New Question (e.g., "1. What is...")
+                const qMatch = line.match(/^(\d+)\.\s+(.*)/);
+                if (qMatch) {
+                    if (currentQ) questions.push(currentQ);
+                    currentQ = {
+                        number: parseInt(qMatch[1]),
+                        text: qMatch[2],
+                        options: []
+                    };
+                    continue;
+                }
+
+                if (currentQ) {
+                    // Match Option (e.g., "A. Text", "✓ B. Text", "✔C. Text", "Α. 25%")
+                    // Regex handles optional checkmarks (✓ or ✔), spaces, and Letters (A-Z or Greek)
+                    const optMatch = line.match(/^(✓|✔)?\s*([A-ZΑ-Ωa-z])\.\s+(.*)/);
+
+                    if (optMatch) {
+                        const isCorrect = (optMatch[1] === '✓' || optMatch[1] === '✔');
+                        const letter = optMatch[2];
+                        const text = optMatch[3];
+                        currentQ.options.push({ text: text, isCorrect: isCorrect, originalLetter: letter });
+                    } else if (currentQ.options.length === 0) {
+                        // Multi-line question text
+                        currentQ.text += " " + line;
+                    } else {
+                        // Multi-line option text
+                        currentQ.options[currentQ.options.length - 1].text += " " + line;
+                    }
+                }
+            }
+            if (currentQ) questions.push(currentQ);
+            return questions;
+        }
+    </script>
+</body>
+</html>
+
+```
